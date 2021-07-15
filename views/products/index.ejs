@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Products</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/layout/header-main/style.css">
+    <link rel="stylesheet" href="./stylesheets/layout/footer/style.css">
+    <link rel="stylesheet" href="./stylesheets/products/style.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!--------- container ----------->
+    <div class="container-fuild">
+        
+        <!--------- header ----------->
+        <%- include('../layout/header-main.ejs'); %>
+        
+        <!--------- content----------->
+        
+        <div class='content'>
+            
+            <!-- Thêm code ở đây -->
+            <br/>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                    <!--- filter-sidebar -->
+                        
+                        <div class="filter-sidebar">
+                            
+                            <span>Sắp xếp theo</span>
+                            <div class="button">
+                                <a href="#">Liên Quan</a>
+                                <a href="#">Mới nhất</a>
+                                <a href="#">Bán chạy</a>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Giá
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Action</button>
+                                    <button class="dropdown-item" type="button">Another action</button>
+                                    <button class="dropdown-item" type="button">Something else here</button>
+                                </div>
+                            </div>
+                            
+
+
+                        </div>
+                            
+                    <!--- filter-sidebar -->
+                    </div>                    
+                </div>
+
+                <!---------------------------------------------------------------------------------------------->
+                <br/>
+                <!---------------------------------------------------------------------------------------------->
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- menu doc -->
+                        <div id="menu">
+                            <ul>
+                                <li>
+                                    <i class="icon-main-menu-electronic lv1-icon tikicon"></i>
+                                    <a href="#">Điện Thoại - Máy Tính Bảng</a>
+                                </li>
+                                <li><a href="#">Điện Tử - Điện Lạnh</a></li>
+                                <li><a href="#">Phụ Kiện - Thiết Bị Số</a></li>
+                                <li><a href="#">Laptop - Thiết Bị IT</a></li>
+                                <li><a href="#">Máy Ảnh - Quay Phim</a></li>
+                                <li><a href="#">Điện Gia Dụng</a></li>
+                                <li><a href="#">Nhà Cửa Đời Sống</a></li>
+                                <li><a href="#">Hàng Tiêu Dùng - Thực Phẩm</a></li>
+                                <li><a href="#">Đồ Chơi, Mẹ & Bé</a></li>
+                                <li><a href="#">Làm Đẹp - Sức Khỏe</a></li>
+                                <li><a href="#">Thời TRang - Phụ Kiện</a></li>
+                                <li><a href="#">Thể Thao - Dã Ngoại</a></li>
+                                <li><a href="#">Xe Máy, Ô Tô, Xe Đạp</a></li>
+                                <li><a href="#">Hàng Quốc Tế</a></li>
+                            </ul>
+                        </div>
+                        <!-- menu doc -->
+                    </div>
+                    
+                    <div class="col-md-9">
+                        <!-- render products -->
+                        <div class="list-item">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- render products --> 
+                    </div>
+                </div>
+            </div>
+            
+        </div> <!--------- end content----------->
+        
+        <!--------- footer ----------->
+        <%- include('../layout/footer.ejs'); %>
+        
+    </div><!--------- end container ----------->
+    
+    <!-- javascript -->
+    <script src="./javascripts/layout/header-main/script.js"></script>
+    <script src="./javascripts/layout/footer/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
